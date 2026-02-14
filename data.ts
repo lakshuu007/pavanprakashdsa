@@ -14,7 +14,7 @@ export const DATA: AppData = {
       id: "1",
       date: "5/2/2026",
       topic: "Pattern Programming-1",
-      youtubeLink: "#",
+      youtubeLink: "https://www.youtube.com/watch?v=f1IVU3mKvv8",
       notesLink: "#",
       homework: "#"
     },
