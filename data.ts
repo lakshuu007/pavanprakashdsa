@@ -7,7 +7,7 @@ export const DATA: AppData = {
     tagline: "Master DSA in Java & Python",
     about: "",
     email: "pavanprakash@example.com",
-    youtubeChannel: "#",
+    youtubeChannel: "https://www.youtube.com/results?search_query=jai+ballaya+academy",
   },
   classes: [
     {
