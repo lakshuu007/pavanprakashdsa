@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-2">
             <GraduationCap className="w-8 h-8 text-indigo-600" />
-            <span className="text-xl font-bold tracking-tight text-slate-900">pavanprakashdsa</span>
+            <span className="text-xl font-bold tracking-tight text-slate-900">Pavanprakashdsa</span>
           </div>
 
           <div className="hidden md:block">
