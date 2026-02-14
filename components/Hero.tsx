@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
             Learn DSA Step-by-Step
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight text-slate-900">
-            pavanprakashdsa
+            Pavanprakashdsa
           </h1>
           <p className="text-xl md:text-3xl font-bold mb-4 gradient-text">
             {DATA.instructor.tagline}
