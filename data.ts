@@ -25,7 +25,7 @@ export const DATA: AppData = {
       youtubeLink: "youtube.com/watch?v=ppmBHL1a7YM&feature=youtu.be",
       notesLink: "https://docs.google.com/document/d/1RjJvfKmbQUDwlVWIAey5X75_rlItXTWYqY7Zg87odKk/edit?tab=t.0",
       homework: "#",
-      practice: [{ label: "Solve Questions", url: "#" }]
+      practice: [{ label: "Solve Questions", url: "https://pavanprakashdsa.github.io/homework/hw3.txt" }]
     },
     {
       id: "3",
@@ -35,8 +35,8 @@ export const DATA: AppData = {
       notesLink: "https://docs.google.com/document/d/1TaTZ9AnzBv2oI_TB0uE-SIlVh8aCjo3-axfeQN6MJVo/edit?tab=t.0",
       homework: "#",
       practice: [
-        { label: "1. Hackerrank Question", url: "#" },
-        { label: "2. GeekForGeeks Question", url: "#" }
+        { label: "1. Hackerrank Question", url: "https://www.hackerrank.com/challenges/printing-pattern-2/problem" },
+        { label: "2. GeekForGeeks Question", url: "https://www.geeksforgeeks.org/problems/pattern/1" }
       ]
     },
     {
@@ -46,8 +46,8 @@ export const DATA: AppData = {
       youtubeLink: "https://www.youtube.com/watch?v=c-effdypJhI",
       notesLink: "https://docs.google.com/document/d/1Qh65dI8p0SmOVZQi7yHrDasJMVGITfcBmKzQGnW94Uc/edit?tab=t.0",
       practice: [
-        { label: "PrepInsta", url: "#" },
-        { label: "PYNative", url: "#" },
+        { label: "PrepInsta", url: "https://prepinsta.com/pattern-programs-tutorial/" },
+        { label: "PYNative", url: "https://pynative.com/print-pattern-python-examples/" },
         { label: "Beginner DSA - HackerRank", url: "#" }
       ]
     },
@@ -72,9 +72,9 @@ export const DATA: AppData = {
       youtubeLink: "youtube.com/watch?v=PnIOEPDATjw&feature=youtu.be",
       notesLink: "https://docs.google.com/document/d/1X2xRCUPv3CNzHgBr7kpBVwsLhVMhVtu3WmCTLNuvsGk/edit?tab=t.0",
       practice: [
-        { label: "Simple-Array-Sum [HackerRank]", url: "#" },
-        { label: "A Very Big Sum [HackerRank]", url: "#" },
-        { label: "Running sum of 1D Array [LeetCode]", url: "#" }
+        { label: "Simple-Array-Sum [HackerRank]", url: "https://www.hackerrank.com/challenges/simple-array-sum/problem?isFullScreen=true" },
+        { label: "A Very Big Sum [HackerRank]", url: "https://www.hackerrank.com/challenges/a-very-big-sum/problem" },
+        { label: "Running sum of 1D Array [LeetCode]", url: "https://leetcode.com/problems/running-sum-of-1d-array/description/?envType=problem-list-v2&envId=prefix-sum" }
       ]
     },
     {
@@ -84,9 +84,9 @@ export const DATA: AppData = {
       youtubeLink: "youtube.com/watch?v=Wg834zAVliw&feature=youtu.be",
       notesLink: "https://docs.google.com/document/d/1rm2SbVoUAVapYgnWmDw6myH7cnSBirBCtIZ_HXpE4_E/edit?tab=t.0",
       practice: [
-        { label: "Mini-Max Sum [HackerRank]", url: "#" },
-        { label: "StairCase [HackerRank]", url: "#" },
-        { label: "Diagonal Difference [HackerRank]", url: "#" }
+        { label: "Mini-Max Sum [HackerRank]", url: "https://www.hackerrank.com/challenges/mini-max-sum/problem" },
+        { label: "StairCase [HackerRank]", url: "https://www.hackerrank.com/challenges/staircase/problem" },
+        { label: "Diagonal Difference [HackerRank]", url: "https://www.hackerrank.com/challenges/diagonal-difference/problem" }
       ]
     },
     {
@@ -95,7 +95,7 @@ export const DATA: AppData = {
       topic: "Brute Force Method",
       youtubeLink: "https://www.youtube.com/watch?v=-WK9WPhuKB4",
       notesLink: "https://docs.google.com/document/d/1EP1zgKUo0CyUa2c1RJbpbEYZbWjjuYO2h2oN8N44x1g/edit?tab=t.0",
-      practice: [{ label: "Two Sum [LeetCode]", url: "#" }]
+      practice: [{ label: "Two Sum [LeetCode]", url: "https://leetcode.com/problems/two-sum/description/" }]
     },
     {
       id: "10",
