@@ -3,7 +3,7 @@ export async function handler(event) {
       const { message } = JSON.parse(event.body);
   
       const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${process.env.GEMINI_API_KEY}`,
         {
           method: "POST",
           headers: {
@@ -12,7 +12,6 @@ export async function handler(event) {
           body: JSON.stringify({
             contents: [
               {
-                role: "user",
                 parts: [{ text: message }],
               },
             ],
@@ -27,8 +26,9 @@ export async function handler(event) {
       let reply = "No response.";
   
       if (data.candidates && data.candidates.length > 0) {
-        const parts = data.candidates[0].content.parts;
-        reply = parts.map(p => p.text).join("");
+        reply = data.candidates[0].content.parts
+          .map(p => p.text)
+          .join("");
       }
   
       return {
@@ -37,7 +37,7 @@ export async function handler(event) {
       };
   
     } catch (error) {
-      console.error("ERROR:", error);
+      console.error(error);
       return {
         statusCode: 500,
         body: JSON.stringify({ error: "Server error." }),
