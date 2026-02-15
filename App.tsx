@@ -5,6 +5,8 @@ import Hero from './components/Hero';
 import Classes from './components/Classes';
 import Resources from './components/Resources';
 import Footer from './components/Footer';
+import Chatbot from "./components/chatbot";
+
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Hero />
         <Classes />
         <Resources />
+        <Chatbot />
+
       </main>
       <Footer />
     </div>
