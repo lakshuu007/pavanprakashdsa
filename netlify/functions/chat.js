@@ -12,8 +12,12 @@ export async function handler(event) {
           body: JSON.stringify({
             contents: [
               {
-                parts: [{ text: message }],
-              },
+                parts: [
+                  {
+                    text: `You are a DSA assistant for Java and Python. Answer clearly and concisely.\n\nUser: ${message}`
+                  }
+                ]
+              }
             ],
           }),
         }
@@ -21,16 +25,18 @@ export async function handler(event) {
   
       const data = await response.json();
   
-      // TEMP DEBUG
       return {
         statusCode: 200,
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          reply:
+            data.candidates?.[0]?.content?.parts?.[0]?.text ||
+            "No response.",
+        }),
       };
-  
     } catch (error) {
       return {
         statusCode: 500,
-        body: JSON.stringify({ error: error.message }),
+        body: JSON.stringify({ error: "Something went wrong." }),
       };
     }
   }
