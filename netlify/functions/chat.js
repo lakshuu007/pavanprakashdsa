@@ -22,15 +22,22 @@ export async function handler(event) {
   
       const data = await response.json();
   
-      const reply =
-        data?.candidates?.[0]?.content?.parts?.[0]?.text ||
-        "No response.";
+      console.log("FULL GEMINI RESPONSE:", JSON.stringify(data));
+  
+      let reply = "No response.";
+  
+      if (data.candidates && data.candidates.length > 0) {
+        const parts = data.candidates[0].content.parts;
+        reply = parts.map(p => p.text).join("");
+      }
   
       return {
         statusCode: 200,
         body: JSON.stringify({ reply }),
       };
+  
     } catch (error) {
+      console.error("ERROR:", error);
       return {
         statusCode: 500,
         body: JSON.stringify({ error: "Server error." }),
